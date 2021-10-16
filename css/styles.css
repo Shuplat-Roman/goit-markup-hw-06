@@ -558,40 +558,76 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-subscribe {
+.footer-form {
   display: block;
   padding-left: 93px;
 }
 
- {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-newsletter {
+.footer-form-title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--tertiary-text-color);
+  padding-bottom: 20px;
+}
+
+.footer-form-blok {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-input:focus {
+  color: var(--tertiary-text-color);
+  border: 1px solid var(--accent-color);
+}
+
+.footer-btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
 }
 
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: #188ce8;
-}
-
-.online-mail {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  resize: none;
 }
 
 /*--------------------МОДАЛЬНЕ ВІКНО--------------------*/
